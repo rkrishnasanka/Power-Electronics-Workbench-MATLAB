@@ -1,4 +1,4 @@
-function [ i_min, i_max ] = Boost_RippleCurrent(V_in, duty_cycle, time_period, inductance)
+function [ i_min, i_max ] = Boost_RippleCurrent(V_in, duty_cycle, time_period, inductance, I_load)
 %Boost_imax Calculates the imax for the boost converter
 %   [ i_min, i_max ] = Boost_RippleCurrent(V_in, duty_cycle, time_period, inductance)
     i_max = I_load + V_in*duty_cycle*time_period/2/inductance;
